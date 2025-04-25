@@ -11,7 +11,7 @@ browser_regex = re.compile(r'(MSIE|Trident|Edg|Edge|Chrome|Firefox|OPR|Opera|Saf
 browser_counts = Counter()
 
 # Leer el archivo de logs
-with open("access.log", "r", encoding="utf-8") as log_file:
+with open("access.log/access.log", "r", encoding="utf-8") as log_file:
     for line in log_file:
         user_agent_match = user_agent_regex.search(line)
         if user_agent_match:
